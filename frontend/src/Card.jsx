@@ -19,7 +19,7 @@ const Card = () => {
       setLoading(true);
         try{
             //const response = await axios.get(`https://youtubevideodownloaders.onrender.com/videoinfo`, {params: {url: videourl}});
-            const response = await axios.get(`http://localhost:5000/videoinfo`, {params: {url: videourl}});
+            const response = await axios.get(`https://ytdownload-lwuf.onrender.com/videoinfo`, {params: {url: videourl}});
            setVideoData(response.data)
           
         }
@@ -36,7 +36,7 @@ const Card = () => {
                 return  toast.error(" not set quality here ");
         }
        
-            window.open(`http://localhost:5000/download?url=${videourl}&itag=${selectedQuality}`);
+            window.open(`https://ytdownload-lwuf.onrender.com/download?url=${videourl}&itag=${selectedQuality}`);
             
 
             setvideourl("");
