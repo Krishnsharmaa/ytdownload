@@ -1,0 +1,9 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+npm-debug.log
+yarn-error.log
+
+# Environment variables (agar use kar rahe ho)
+.env
